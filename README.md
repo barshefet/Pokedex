@@ -6,6 +6,7 @@ a typescript project deployed by heroku run by gulp
 
 1. npm ci
 2. npm start
+3. click the link in the terminal to be redirected to the localy-hosted site
 
 # Link to the heroku-deployed project:
 
