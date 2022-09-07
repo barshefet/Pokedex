@@ -24,9 +24,6 @@ connectToDatabase()
 
 connectToPGDatabase()
 
-const runOncePG = () =>{
-  
-}
 
 // const runOnce = () =>{
 //   fetchData(999)
@@ -39,12 +36,7 @@ const runOncePG = () =>{
   
 // fusePokemon()
 
-app.get('/weather', (_request: any, response: any) => {
-  pgClient.query('SELECT * FROM weather', (err: Error, res: any) => {
-    if (err) throw err;
-    response.status(200).json(res.rows);
-  });
-});
+
 
 app.get('/pokemon/:name', async (req, res) => {
   res.send(await findPokemon(req.params))
